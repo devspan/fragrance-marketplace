@@ -1,0 +1,11 @@
+{
+    "build": {
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    "devCommand": "next dev",
+    "buildCommand": "next build",
+    "outputDirectory": "out"
+  }
+  
