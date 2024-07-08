@@ -1,4 +1,3 @@
-// src/app/page.tsx
 'use client';
 
 import React from 'react';
@@ -44,7 +43,7 @@ const HomePage = () => {
                 Discover Your Signature Scent
               </Text>
               <Text size="4" align="center" style={{ color: 'var(--gray-3)', maxWidth: '600px' }}>
-                Explore a world of fragrances from Pakistan's finest creators
+                Explore a world of fragrances from Pakistan&apos;s finest creators
               </Text>
               <Button size="4" variant="surface" style={{ fontWeight: 'bold' }}>
                 Shop Now
@@ -153,13 +152,15 @@ const HomePage = () => {
             <Grid columns={{ initial: '1', sm: '2', md: '4' }} gap="4">
               <Box>
                 <Text weight="bold" mb="2">About Us</Text>
-                <Text size="2" as="p">Discover the finest fragrances from Pakistan's top creators.</Text>
+                <Text size="2" as="p">Discover the finest fragrances from Pakistan&apos;s top creators.</Text>
               </Box>
               <Box>
                 <Text weight="bold" mb="2">Quick Links</Text>
                 <Flex direction="column" gap="1">
                   {['Shop', 'Categories', 'About', 'Contact'].map((link) => (
-                    <Text key={link} size="2" as="a" href="#" style={{ textDecoration: 'none' }}>{link}</Text>
+                    <a key={link} href="#" style={{ textDecoration: 'none' }}>
+                      <Text size="2" as="span">{link}</Text>
+                    </a>
                   ))}
                 </Flex>
               </Box>
@@ -167,7 +168,9 @@ const HomePage = () => {
                 <Text weight="bold" mb="2">Customer Service</Text>
                 <Flex direction="column" gap="1">
                   {['FAQ', 'Shipping', 'Returns', 'Track Order'].map((link) => (
-                    <Text key={link} size="2" as="a" href="#" style={{ textDecoration: 'none' }}>{link}</Text>
+                    <a key={link} href="#" style={{ textDecoration: 'none' }}>
+                      <Text size="2" as="span">{link}</Text>
+                    </a>
                   ))}
                 </Flex>
               </Box>
